@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function go() {
+                var menu = document.getElementById("menu");
+                if (menu.value == 'home') {
+                    alert('Vai alla pagina: Home')
+                } else if (menu.value == 'storia') {
+                    alert('Vai alla pagina: Storia')
+                } else if (menu.value == 'prodotti') {
+                    alert('Vai alla pagina: Prodotti')
+                } else if (menu.value == 'contatti') {
+                    alert('Vai alla pagina: Contatti')
+                } else {
+                    alert('Errore: nessun elemento selezionato')
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <select id="menu">
+            <option value=""></option>
+            <option value="home">Home</option>
+            <option value="storia">Storia</option>
+            <option value="prodotti">Prodotti</option>
+            <option value="contatti">Contatti</option>
+        </select>
+        <br/>
+
+        <input type="button" value="GO" onclick="go()" />
+
+    </body>
+</html>

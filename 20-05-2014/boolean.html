@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function calc() {
+                //var input = document.getElementById('input');
+                var bool = '';
+                if (bool)
+                    alert('vero');
+                else {
+                    alert('false');
+                    alert('false2');
+                }
+                
+                var i;
+                for (i=0; i<3; i++) {
+                    alert(i);
+                }
+                
+                i=0;
+                while (i<3) 
+                {
+                    alert(i);
+                    i = i+1;
+                }
+                
+                do {
+                    alert(i);
+                    i = i+1;
+                } while (i<3);
+                    
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td><input type="text" id="input" /></td></tr>
+        </table>
+        <br/>
+
+        <input type="button" value="CALC" onclick="calc()" />
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function doswitch() {
+                var input = document.getElementById('input');
+                if (input.value) {
+                    
+                }
+                switch (input) {
+                    case 1: 
+                        alert('Istruzione 1');
+                        break;
+                    case '1': 
+                        alert('Istruzione "1111"');
+                        break;                        
+                    case 2: 
+                        alert('Istruzione 2');
+                        break;
+                    case 'uno': 
+                        alert('Istruzione uno');
+                        break;                        
+                     case undefined:
+                        alert('undefined');
+                        break;
+                    default:
+                        alert('Nessuna istruzione trovata');
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+    
+        <table>
+            <tr><td><input type="text" id="input" /></td></tr>
+        </table>
+    
+        <input type="button" value="SWITCH" onclick="doswitch()" />
+    </body>
+</html>

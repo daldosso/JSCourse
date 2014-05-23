@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function ciclofor() {
+                for (var i=0; i<10; i++) {
+                    document.writeln("ciclo for: " + i + "<br/>");
+                }
+            }
+            
+            function ciclowhile() {
+                var i = 0;
+                while (i<10) {
+                    document.writeln("ciclo while: " + i + "<br/>");
+                    i++;
+                }
+            }
+            
+            function ciclodowhile() {
+                var i = 0;
+                do {
+                    document.writeln("ciclo do while: " + i + "<br/>");
+                    i++;
+                } while (i<10)
+            }
+            
+            function forin() {
+                var test = [];
+                test['nome'] = 'Alberto';
+                test['cognonome'] = 'Dal Dosso';
+                for (i in test) {
+                    document.writeln(i + "<br/>");
+                }
+            }            
+            
+        </script>
+    </head>
+    <body>
+        <input type="button" value="FOR" onclick="ciclofor()" />
+        <input type="button" value="WHILE" onclick="ciclowhile()" />
+        <input type="button" value="DOWHILE" onclick="ciclodowhile()" />
+        <input type="button" value="FORIN" onclick="forin()" />
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function getNumber(id) {
+                var input = document.getElementById(id);
+                return parseFloat(input.value);
+            }
+        
+            function calc() {
+                var output = document.getElementById('output');
+                output.value = Math.max(
+                    getNumber('input1'), 
+                    getNumber('input2'),
+                    getNumber('input3'),
+                    getNumber('input4'),
+                    getNumber('input5')
+                );
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Input1:</td><td><input type="text" id="input1" /></td></tr>
+            <tr><td>Input2:</td><td><input type="text" id="input2" /></td></tr>
+            <tr><td>Input3:</td><td><input type="text" id="input3" /></td></tr>
+            <tr><td>Input4:</td><td><input type="text" id="input4" /></td></tr>
+            <tr><td>Input5:</td><td><input type="text" id="input5" /></td></tr>
+
+            <tr><td>Output:</td><td><input type="text" id="output" /></td></tr>
+        </table>
+        <br/>
+
+        <input type="button" value="max" onclick="calc()" />
+        <br/>
+
+    </body>
+</html>

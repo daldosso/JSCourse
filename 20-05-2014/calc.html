@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function calc() {
+                var input1 = document.getElementById('input1');
+                var input2 = document.getElementById('input2');
+                var output = document.getElementById('output');
+                output.value = input1.value + input2.value;
+
+                //var inputInt1 = parseInt(input1.value);
+                //var inputInt2 = parseInt(input2.value);
+                //output.value = inputInt1 + inputInt2;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td><input type="text" id="input1" /></td><td>+</td></tr>
+            <tr><td><input type="text" id="input2" /></td><td>=</td></tr>
+            <tr><td><input type="text" id="output" /><td>&nbsp;</td></td></tr>
+        </table>
+        <br/>
+
+        <input type="button" value="CALC" onclick="calc()" />
+
+    </body>
+</html>

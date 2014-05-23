@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>960 Grid System &mdash; Demo</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<script type="text/javascript">
+
+function ordina() {
+    var output = document.getElementById('box');
+    var myCollection = [];
+    myCollection.push(5);
+    myCollection.push(45);
+    myCollection.push(35);
+    myCollection.push(3);
+    alert(myCollection.sort());
+    output.innerHTML = myCollection.sort();
+}
+
+ordina();
+</script>
+</head>
+<body>
+<div class="container_12">
+
+  <div class="grid_12">
+<div class="box">
+<h3>input uno: <input type="text" id="no1" /></h3>
+<h3>input due: <input type="text" id="no2" /></h3>
+<h3>input tre: <input type="text" id="no3" /></h3>
+<h3>input quattro: <input type="text" id="no4" /></h3>
+<h3>input cinque: <input type="text" id="no5" /></h3>
+<h2>output: <input type="text" id="max" /></h2>
+<input type="button" value="max" id="maxer" onclick="ordina()" />
+<input type="button" id="adder" value="add a field" />
+<div id="box"></div>
+<div class="clear"></div>
+</div>
+  </div>
+
+</div>
+<!-- end .container_16 -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function getNumber(id) {
+                var input = document.getElementById(id);
+                return parseFloat(input.value);
+            }
+            
+            function add() {
+                var inputList = document.getElementsByTagName('input');
+                var counter = 0;
+                for (var i=0; i<inputList.length; i++) {
+                    var input = inputList[i];
+                    if (input.type == 'text') {
+                        counter++;
+                    }
+                }
+                counter++;
+                var table = document.getElementById('input-table');
+                var row = table.appendChild(document.createElement("tr"));
+                //var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "Input" + counter + ":";
+                var input = document.createElement("input");
+                input.id = "input" + counter;
+                cell2.appendChild(input);
+            }
+        
+            function sort() {
+                var output = document.getElementById('output');
+                var inputList = document.getElementsByTagName('input');
+                var inputArray = [];
+                var counter = 0;
+                for (var i=0; i<inputList.length; i++) {
+                    var input = inputList[i];
+                    if (input.type == 'text') {
+                        inputArray.push(input.value);
+                        counter++;
+                    }
+                }
+                output.innerHTML = inputArray.sort();
+            }
+            
+            function reverse() {
+                var output = document.getElementById('output');
+                var inputList = document.getElementsByTagName('input');
+                var inputArray = [];
+                var counter = 0;
+                for (var i=0; i<inputList.length; i++) {
+                    var input = inputList[i];
+                    if (input.type == 'text') {
+                        inputArray.push(input.value);
+                        counter++;
+                    }
+                }
+                output.innerHTML = inputArray.reverse();
+            }            
+            
+        </script>
+    </head>
+    <body>
+        <table id='input-table'>
+            <tr><td>Input1:</td><td><input type="text" id="input1" /></td></tr>
+            <tr><td>Input2:</td><td><input type="text" id="input2" /></td></tr>
+            <tr><td>Input3:</td><td><input type="text" id="input3" /></td></tr>
+            <tr><td>Input4:</td><td><input type="text" id="input4" /></td></tr>
+            <tr><td>Input5:</td><td><input type="text" id="input5" /></td></tr>
+        </table>
+        <br/>
+        <input type="button" value="add cell" onclick="add()" />
+        <br/>
+        <input type="button" value="sort" onclick="sort()" />
+        <br/>
+        <input type="button" value="reverse" onclick="reverse()" />
+        <br/>
+        <br/>
+        <br/>
+        Output:<div id="output" />
+    </body>
+</html>

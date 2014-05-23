@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function sayHello(name) {
+                var text = 'Hello ' + name; // Local variable
+                var sayAlert = function() { alert(text); }
+                return sayAlert;
+            }
+            //var say = sayHello('Bob');
+            //say(); // alerts "Hello Bob"
+            //say('Alberto');
+            
+            var say2 = sayHello;
+            say2('Alberto')();
+           
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

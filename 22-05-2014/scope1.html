@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function test() {
+                var obj = {
+                    msg: 'test1',
+                    showMessage: function() {
+                        alert(this.msg);
+                    }
+                };
+                obj.showMessage();
+                obj.showMessage.call({msg: 'test2'});
+            }
+           
+        </script>
+    </head>
+    <body>
+        <input type="button" value="TEST" onclick="test()" />
+    </body>
+</html>

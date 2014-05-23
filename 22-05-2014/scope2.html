@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function test() {
+                var car1 = {
+                    id: 'Nissan',
+                    getId: function() {
+                        alert(this.id);
+                    }
+                };
+                car1.getId();
+                
+                var car2 = {
+                    id: 'Fiat',
+                    getId: function() {
+                        alert(this.id);
+                    }
+                };
+                
+                car1.getId.call(car2);
+            }
+           
+        </script>
+    </head>
+    <body>
+        <input type="button" value="TEST" onclick="test()" />
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function calc() {
+                var input1 = document.getElementById('input');
+                var output = document.getElementById('output');
+                output.value = (isNaN(input.value)?"NO":"SI");
+                //alert(0/0 == NaN);
+                //alert(isNaN(0/0));
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Input</td><td><input type="text" id="input" /></td></tr>
+            <tr><td>E' un numero ?</td><td><input type="text" id="output" /></td></tr>
+        </table>
+        <br/>
+
+        <input type="button" value="?" onclick="calc()" />
+
+    </body>
+</html>

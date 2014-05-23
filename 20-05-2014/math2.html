@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function calc(f) {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = f(inputValue);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Input:</td><td><input type="text" id="input" /></td></tr>
+            <tr><td>Output:</td><td><input type="text" id="output" /></td></tr>
+        </table>
+        <br/>
+
+        <input type="button" value="abs" onclick="calc(Math.abs)" />
+        <br/>
+        <input type="button" value="ceil" onclick="calc(Math.ceil)" />
+        <br/>
+        <input type="button" value="floor" onclick="calc(Math.floor)" />
+        <br/>
+        <input type="button" value="round" onclick="calc(Math.round)" />
+        <br/>
+        <input type="button" value="random" onclick="calc(Math.random)" />
+        <br/>
+        <input type="button" value="sqrt" onclick="calc(Math.sqrt)" />
+        <br/>
+
+
+    </body>
+</html>

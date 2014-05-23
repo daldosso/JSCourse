@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        var globale1 = 'globale1';
+        globale2 = 'globale2';
+
+        function fun1() {
+            var locale1 = 'locale1';
+            globale3 = 'globale3';
+        }
+        function fun2() {
+            //alert(locale1);  errore
+            alert(globale1);
+            alert(globale2);
+            alert(globale3);
+        }
+        
+        fun1(); // senza questa chiamata la variabile globale3 non esisterebbe
+        fun2();
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

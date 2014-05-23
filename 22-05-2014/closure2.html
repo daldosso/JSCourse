@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function foo(x) {
+                var tmp = 3;
+                return function (y) {
+                    alert(x + y + (++tmp));
+                }
+            }
+            var bar = foo(2); // bar is now a closure.
+           
+        </script>
+    </head>
+    <body>
+        <input type="button" value="TEST" onclick="bar(10)" />
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function test() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var outputPrecision = document.getElementById('output-precision');
+                var maxValueInput = document.getElementById('MAX_VALUE');
+                maxValueInput.value = Number.MAX_VALUE;
+
+                document.getElementById('NaN').value = Number.NaN;
+
+                var inputValue = parseFloat(input.value);
+                output.value = inputValue.toFixed(2);
+                outputPrecision.value = inputValue.toPrecision(10);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Input:</td><td><input type="text" id="input" /></td></tr>
+            <tr><td>Output (fixed):</td><td><input type="text" id="output" /></td></tr>
+            <tr><td>Output (precision):</td><td><input type="text" id="output-precision" /></td></tr>
+        </table>
+        <br/>
+        <br/>
+
+        <input type="button" value="test" onclick="test()" />
+
+        <br/><br/><br/>
+
+        <table>
+            <tr><td>MAX_VALUE</td><td><input type="text" id="MAX_VALUE" /></td></tr>
+            <tr><td>NaN</td><td><input type="text" id="NaN" /></td></tr>
+        </table>
+
+
+
+    </body>
+</html>

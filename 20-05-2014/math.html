@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function abs() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = Math.abs(inputValue);
+            }
+
+            function ceil() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = Math.ceil(inputValue);
+            }
+
+            function floor() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = Math.floor(inputValue);
+            }
+
+            function round() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = Math.round(inputValue);
+            }
+
+            function random() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = Math.random();
+            }
+
+            function sqrt() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputValue = parseFloat(input.value);
+                output.value = Math.sqrt(inputValue);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Input:</td><td><input type="text" id="input" /></td></tr>
+            <tr><td>Output:</td><td><input type="text" id="output" /></td></tr>
+        </table>
+        <br/>
+
+        <input type="button" value="abs" onclick="abs()" />
+        <br/>
+        <input type="button" value="ceil" onclick="ceil()" />
+        <br/>
+        <input type="button" value="floor" onclick="floor()" />
+        <br/>
+        <input type="button" value="round" onclick="round()" />
+        <br/>
+        <input type="button" value="random" onclick="random()" />
+        <br/>
+        <input type="button" value="sqrt" onclick="sqrt()" />
+        <br/>
+
+
+    </body>
+</html>

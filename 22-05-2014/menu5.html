@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function go() {
+                var menu = document.getElementById("menu");
+                switch (menu.value) {
+                    case 'home':                  
+                        alert('Vai alla pagina: Home');
+                        document.getElementById('home').click();
+                        break;
+                    case 'storia':
+                        alert('Vai alla pagina: Storia');
+                        break;
+                    case 'prodotti':
+                        alert('Vai alla pagina: Prodotti');
+                        break;
+                    case 'contatti':
+                        alert('Vai alla pagina: Contatti');
+                        break;
+                    case '': 
+                        alert('Errore: nessun elemento selezionato');
+                        break;                        
+                    default: 
+                        alert('Errore: default');
+                        break;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <select id="menu">
+            <option value=""></option>
+            <option value="home">Home</option>
+            <option value="storia">Storia</option>
+            <option value="prodotti">Prodotti</option>
+            <option value="contatti">Contatti</option>
+        </select>
+        <br/>
+
+        <input type="button" value="GO" onclick="go()" />
+        <a id="home" href="home.html" />
+
+    </body>
+</html>

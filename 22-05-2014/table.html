@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .test-table {
+                border: solid 1px;
+                width: 200px;
+            }
+        </style>
+        <script>
+            function add() {
+                var table = document.getElementById('test-table');
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "Valore:";
+                cell2.innerHTML = "1";
+            }
+        </script>
+    </head>
+    <body>
+        <br/>
+        <button onclick="add();">ADD</button>
+        <br/>
+        <br/>
+        <table class="test-table" border="1" id="test-table">
+            <tr><td>Valore:</td><td>1</td></tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+            function toUpperCase() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputString = input.value; 
+                output.value = inputString.toUpperCase();
+            }
+
+            function trim() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputString = input.value; 
+                output.value = inputString.trim();
+            }
+            
+            function substr() {
+                var input = document.getElementById('input');
+                var output = document.getElementById('output');
+                var inputString = input.value; 
+                output.value = inputString.substr(2, 5);
+            }          
+            
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>Input:</td><td><input type="text" id="input" /></td></tr>
+            <tr><td>Output:</td><td><input type="text" id="output" /></td></tr>
+        </table>
+        <br/>
+        <br/>
+        <input type="button" value="toUpperCase" onclick="toUpperCase()" />
+        <br/>
+        <input type="button" value="trim" onclick="trim()" />
+        <br/>
+        <input type="button" value="substr" onclick="substr()" />        
+    </body>
+</html>
